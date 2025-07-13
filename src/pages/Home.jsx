@@ -1,6 +1,7 @@
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
@@ -47,18 +48,18 @@ export default function Home() {
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <a
-            href="/projects"
+          <Link
+            to="/projects"
             className="bg-emerald-500 text-black px-6 py-2 rounded hover:bg-emerald-600 transition"
           >
             View Projects
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="border border-emerald-500 text-emerald-400 px-6 py-2 rounded hover:bg-emerald-500 hover:text-black transition"
           >
             Contact Me
-          </a>
+          </Link>
           <a
             href="/Sundar_Kalidass_Resume.pdf"
             download
